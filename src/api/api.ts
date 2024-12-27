@@ -18,15 +18,6 @@ export const getChatCompletion = async (
   if (isAzureEndpoint(endpoint) && apiKey) {
     headers['api-key'] = apiKey;
 
-    const model = config.model;
-
-    // set api version to 2023-07-01-preview for gpt-4 and gpt-4-32k, otherwise use 2023-03-15-preview
-    //const apiVersion =
-    //  model === 'gpt-4' || model === 'gpt-4-32k'
-    //    ? '2023-07-01-preview'
-    //    : '2023-03-15-preview';
-
-    //const path = `openai/deployments/${model}/chat/completions?api-version=${apiVersion}`;
     const path = "";
 
     if (!endpoint.endsWith(path)) {
@@ -68,14 +59,6 @@ export const getChatCompletionStream = async (
   if (isAzureEndpoint(endpoint) && apiKey) {
     headers['api-key'] = apiKey;
 
-    const model = config.model;
-
-    // set api version to 2023-07-01-preview for gpt-4 and gpt-4-32k, otherwise use 2023-03-15-preview
-    //const apiVersion =
-    //  model === 'gpt-4' || model === 'gpt-4-32k'
-    //    ? '2023-07-01-preview'
-    //    : '2023-03-15-preview';
-    //const path = `openai/deployments/${model}/chat/completions?api-version=${apiVersion}`;
     const path = "";
 
     if (!endpoint.endsWith(path)) {

@@ -17,22 +17,16 @@ export const _defaultSystemMessage =
 
 export const modelOptions: ModelOptions[] = [
   'gpt-4o',
-  'gpt-4o-2024-05-13',
 ];
 
 export const defaultModel = 'gpt-4o';
 
 export const modelMaxToken = {
   'gpt-4o': 128000,
-  'gpt-4o-2024-05-13': 128000,
 };
 
 export const modelCost = {
   'gpt-4o': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'gpt-4o-2024-05-13': {
     prompt: { price: 0.005, unit: 1000 },
     completion: { price: 0.015, unit: 1000 },
   },
